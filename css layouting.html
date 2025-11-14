@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Portfolioku</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-image: url('background.jpg');
+            background-size: cover;
+        }
+
+        /* HEADER */
+        .header {
+            background-color: rgba(0,0,0,0.6);
+            padding: 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .menu a {
+            margin: 0 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* MAIN LAYOUT */
+        .container {
+            display: flex;
+            padding: 30px;
+        }
+
+        /* LEFT CONTENT */
+        .tentang {
+            width: 40%;
+            background-color: rgba(0,0,0,0.6);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        /* BOX JENJANG */
+        .pendidikan {
+            width: 60%;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding-left: 40px;
+        }
+
+        .box {
+            width: 120px;
+            height: 120px;
+            background-color: rgba(255,255,255,0.4);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 8px;
+            border: 1px solid #555;
+        }
+
+        /* FOOTER */
+        .footer {
+            background-color: rgba(0,0,0,0.7);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h2>WEB PORTOFOLIO KU</h2>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Profil</a>
+            <a href="#">Kontak</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- KIRI -->
+        <div class="tentang">
+            <h3>TENTANG AKU</h3>
+            <p>
+                Halo, nama saya Renagha Saya adalah seorang mahasiswa Teknik Informatika
+                Saya memiliki hobi Bermain game dan memiliki cita-cita Pengusaha sukses
+            </p>
+        </div>
+
+        <!-- KANAN -->
+        <div class="pendidikan">
+            <div class="box">SD</div>
+            <div class="box">SMP</div>
+            <div class="box">SMA</div>
+            <div class="box">S1</div>
+        </div>
+    </div>
+
+    <div class="footer">
+        Copyright &copy; 2024 - Rengha Hanafi
+    </div>
+
+</body>
+</html>
