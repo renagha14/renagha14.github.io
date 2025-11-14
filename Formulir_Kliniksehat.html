@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Klinik Sehat</title>
+</head>
+<body>
+    <h1>Form Pendaftaran Pasien - Klinik Sehat</h1>
+    <p>Silakan isi data berikut dengan benar.</p>
+    <hr>
+    <form>
+        <h3>Data Pasien</h3>
+        <label for="nama">Nama Lengkap:</label><br>
+        <input type="text" id="nama" name="nama" required><br><br>
+
+        <label for="umur">Umur:</label><br>
+        <input type="number" id="umur" name="umur" required><br><br>
+
+        <label for="jk">Jenis Kelamin:</label><br>
+        <input type="radio" id="jk_l" name="jk" value="Laki-laki"> Laki-laki
+            <input type="radio" id="jk_p" name="jk" value="Perempuan"> Perempuan<br><br>
+
+        <label for="alamat">Alamat:</label><br>
+        <textarea id="alamat" name="alamat" rows="3" cols="40"></textarea><br><br>
+
+        <label for="telepon">Nomor Telepon:</label><br>
+        <input type="tel" id="telepon" name="telepon"><br><br>
+
+        <h3>Data Pemeriksaan</h3>
+
+        <label for="tanggal">Tanggal Pemeriksaan:</label><br>
+        <input type="date" id="tanggal" name="tanggal" required><br><br>
+
+        <label for="keluhan">Keluhan:</label><br>
+        <textarea id="keluhan" name="keluhan" rows="3" cols="40" required></textarea><br><br>
+
+        <label for="dokter">Pilih Dokter:</label><br>
+        <select id="dokter" name="dokter">
+        <option value="">-- Pilih Dokter --</option>
+        <option value="dr_andi">dr. Andi</option>
+        <option value="dr_siti">dr. Siti</option>
+        <option value="dr_budi">dr. Budi</option>
+        </select><br><br>
+
+        <input type="submit" value="Daftar">
+        <input type="reset" value="Bersihkan">
+    </form>
+    <hr>
+    <p><small>© 2025 Klinik Sehat</small></p>
+</body>
+</html>
